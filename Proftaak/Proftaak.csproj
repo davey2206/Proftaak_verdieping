@@ -1,0 +1,626 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{74FEE3E9-9853-46A4-A11F-507D965A1D7E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Proftaak</RootNamespace>
+    <AssemblyName>Proftaak</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.27.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoForm.Designer.cs">
+      <DependentUpon>AutoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Card.cs" />
+    <Compile Include="Database.cs" />
+    <Compile Include="Discard.cs" />
+    <Compile Include="DiscardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiscardForm.Designer.cs">
+      <DependentUpon>DiscardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeGame.cs" />
+    <Compile Include="HomeGameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeGameForm.Designer.cs">
+      <DependentUpon>HomeGameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeItem.cs" />
+    <Compile Include="KwartetClass.cs" />
+    <Compile Include="KwartetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KwartetForm.Designer.cs">
+      <DependentUpon>KwartetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LichtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LichtForm.Designer.cs">
+      <DependentUpon>LichtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm.Designer.cs">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderForm.Designer.cs">
+      <DependentUpon>OrderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderGame.cs" />
+    <Compile Include="Port.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Road.cs" />
+    <Compile Include="Vehicle.cs" />
+    <EmbeddedResource Include="AutoForm.resx">
+      <DependentUpon>AutoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiscardForm.resx">
+      <DependentUpon>DiscardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeGameForm.resx">
+      <DependentUpon>HomeGameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KwartetForm.resx">
+      <DependentUpon>KwartetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LichtForm.resx">
+      <DependentUpon>LichtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm.resx">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderForm.resx">
+      <DependentUpon>OrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cirkel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\driehoek.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hartje.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ruit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trapezium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vierkant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zeshoek.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Achtergrond_groen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Achtergrond.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Achtergrond_rood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pictogram_autoweg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pictogram_huis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pictogram_kaart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pictogram_lichtjes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blauwe_knop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gele_knop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\groene_knop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\handmixer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\huis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toiletpapier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\witte_knop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\autoweg_achtergrond.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\auto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brandweerauto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\busje.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\politieauto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tractor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vrachtwagen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ziekenwagen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Autoweg_Achtergrond rood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Autoweg_Achtergrond groen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cirkel2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\driehoek2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hartje2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\klaver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ruit2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\schop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ster2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vierkant2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appel2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bank2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bed2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beer2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\borstel2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deegroller2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eend2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\föhn2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kast2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\klok2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kussen2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lamp2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnetron2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mixer2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\openhaard2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ovenwand2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pan2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tafel2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tandenborstel2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toiletpapier2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tv2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wc2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wekker2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zeep2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pictogram_kaart2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pictogram_lichtjes2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gesprek1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gesprek2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gesprek3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gesprek4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poetsen1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poetsen2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poetsen3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poetsen4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smeren1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smeren2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smeren3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smeren4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thee1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thee2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thee3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thee4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stack_icon_151083.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blush.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bunny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\elefant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flowchart.drawio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lipstick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mascara.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mirror.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shirt2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shirt3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shorts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sweater.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shirt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0Health.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1Health.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2Health.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3Health.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brood1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brood2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brood3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brood4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gesprek.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poets.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poets2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poets3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poets4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tea1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tea2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tea3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tea4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\badeend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\borstel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deegroller.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\föhn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kledingkast.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\klok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kussen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lamp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnetron.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mixer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nachthemd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\openhaard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ovenwant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sofa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tafel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tandenborstel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teddybeer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wcpapier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wekker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zeep.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\broek.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hemd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hond.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\konijn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maskara.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\olifant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poeder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\polo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\polo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spiegel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trui.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tshirt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pictogram_wit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pictogram_geel.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
