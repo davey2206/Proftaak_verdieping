@@ -45,8 +45,6 @@ namespace Proftaak
             this.white_btn = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.answerLb = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -193,35 +191,11 @@ namespace Proftaak
             // 
             this.answerLb.AutoSize = true;
             this.answerLb.BackColor = System.Drawing.Color.Transparent;
-            this.answerLb.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.answerLb.Location = new System.Drawing.Point(822, 72);
+            this.answerLb.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.answerLb.Location = new System.Drawing.Point(801, 28);
             this.answerLb.Name = "answerLb";
-            this.answerLb.Size = new System.Drawing.Size(0, 44);
+            this.answerLb.Size = new System.Drawing.Size(0, 69);
             this.answerLb.TabIndex = 30;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(668, 116);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(532, 135);
-            this.label2.TabIndex = 32;
-            this.label2.Text = "Autoweg";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(666, 3);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(564, 69);
-            this.label3.TabIndex = 31;
-            this.label3.Text = "Wordt nu gespeeld:";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // AutoForm
             // 
@@ -230,8 +204,6 @@ namespace Proftaak
             this.BackgroundImage = global::Proftaak.Properties.Resources.autoweg_achtergrond;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1920, 1080);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.answerLb);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
@@ -285,7 +257,5 @@ namespace Proftaak
         private System.Windows.Forms.PictureBox white_btn;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label answerLb;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
     }
 }

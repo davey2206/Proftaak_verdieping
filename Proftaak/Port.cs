@@ -14,7 +14,7 @@ namespace Proftaak
         {
             mySerialPort = new SerialPort("COM5");
             mySerialPort.DataReceived += mySerialPort_DataReceived;
-            //mySerialPort.Open();
+            mySerialPort.Open();
         }
 
         public void closePort()
