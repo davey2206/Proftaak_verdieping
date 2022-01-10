@@ -4,15 +4,16 @@ using System.Drawing;
 
 namespace Proftaak
 {
-    class OrderGame
+    internal class OrderGame
     {
-        List<Card> cards = new List<Card>();
-        Random rng = new Random();
-        bool complete = false;
-        int counter = 0;
-        int[] empty = { 1, 2, 3, 4 };
-        int[] order = { 0, 0, 0, 0 };
-        int[] answer = { 0, 0, 0, 0 };
+        private Score score = new Score(5, 5);
+        private List<Card> cards = new List<Card>();
+        private Random rng = new Random();
+        private bool complete = false;
+        private int counter = 0;
+        private int[] empty = { 1, 2, 3, 4 };
+        private int[] order = { 0, 0, 0, 0 };
+        private int[] answer = { 0, 0, 0, 0 };
 
         public void CreateCards()
         {
@@ -35,12 +36,14 @@ namespace Proftaak
                     cards.Add(new Card(Properties.Resources.brood3, 3));
                     cards.Add(new Card(Properties.Resources.brood4, 4));
                     break;
+
                 case 2:
                     cards.Add(new Card(Properties.Resources.tea1, 1));
                     cards.Add(new Card(Properties.Resources.tea2, 2));
                     cards.Add(new Card(Properties.Resources.tea3, 3));
                     cards.Add(new Card(Properties.Resources.tea4, 4));
                     break;
+
                 case 3:
                     cards.Add(new Card(Properties.Resources.poets, 1));
                     cards.Add(new Card(Properties.Resources.poets2, 2));
@@ -106,10 +109,12 @@ namespace Proftaak
 
                 if (check)
                 {
+                    score.addScore(true);
                     return 2;
                 }
                 else
                 {
+                    score.addScore(false);
                     return 1;
                 }
             }

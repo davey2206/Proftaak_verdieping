@@ -2,7 +2,7 @@
 
 namespace Proftaak
 {
-    public class Vehicle
+    internal class Vehicle
     {
         private int speed = 20;
         private Image picture;
@@ -19,6 +19,7 @@ namespace Proftaak
             get { return speed; }
             set { speed = value; }
         }
+
         public Image Picture
         {
             get { return picture; }

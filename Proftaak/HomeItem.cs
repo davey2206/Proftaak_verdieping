@@ -2,7 +2,7 @@
 
 namespace Proftaak
 {
-    class HomeItem
+    internal class HomeItem
     {
         private int room;
         private Image picture;
@@ -17,6 +17,7 @@ namespace Proftaak
         {
             get { return picture; }
         }
+
         public int Room
         {
             get { return room; }

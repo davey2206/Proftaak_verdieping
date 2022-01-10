@@ -2,7 +2,7 @@
 
 namespace Proftaak
 {
-    class Card
+    internal class Card
     {
         private Image picture;
         private int id;

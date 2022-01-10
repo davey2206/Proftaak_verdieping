@@ -6,9 +6,10 @@ namespace Proftaak
 {
     public partial class DiscardForm : Form
     {
-        Discard game = new Discard();
-        Port serialPortEvent = new Port();
-        bool Start = true;
+        private Discard game = new Discard();
+        private Port serialPortEvent = new Port();
+        private bool Start = true;
+
         public DiscardForm()
         {
             InitializeComponent();
@@ -31,12 +32,15 @@ namespace Proftaak
                 case 1:
                     blanco1.Image = blanco.Image;
                     break;
+
                 case 2:
                     blanco2.Image = blanco.Image;
                     break;
+
                 case 3:
                     blanco3.Image = blanco.Image;
                     break;
+
                 case 4:
                     blanco4.Image = blanco.Image;
                     break;
@@ -52,6 +56,7 @@ namespace Proftaak
             blue_btn.Invoke((new MethodInvoker(delegate { blue_btn.Visible = true; })));
             green_btn.Invoke((new MethodInvoker(delegate { green_btn.Visible = true; })));
         }
+
         public void CheckAnswer(int n)
         {
             if (game.check(n))

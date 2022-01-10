@@ -4,10 +4,11 @@ using System.Drawing;
 
 namespace Proftaak
 {
-    class Road
+    internal class Road
     {
+        private Score score = new Score(4, 2);
         private List<Vehicle> vehicles = new List<Vehicle>();
-        Random rng = new Random();
+        private Random rng = new Random();
         private int answer;
         private int count = -1;
         private int answerCount = -1;
@@ -125,9 +126,11 @@ namespace Proftaak
             if (answer == a)
             {
                 reset();
+                score.addScore(true);
                 return true;
             }
             reset();
+            score.addScore(false);
             return false;
         }
     }

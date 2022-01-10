@@ -4,13 +4,14 @@ using System.Drawing;
 
 namespace Proftaak
 {
-    class KwartetClass
+    internal class KwartetClass
     {
-        Random rng = new Random();
-        List<Card> cards = new List<Card>();
+        private Score score = new Score(10, 6);
+        private Random rng = new Random();
+        private List<Card> cards = new List<Card>();
         private int[] empty = { 1, 2, 3, 4 };
-        int counter = 0;
-        int ans;
+        private int counter = 0;
+        private int ans;
 
         public void Get_List()
         {
@@ -31,18 +32,21 @@ namespace Proftaak
                     cards.Add(new Card(Properties.Resources.kat, 3));
                     cards.Add(new Card(Properties.Resources.hond, 4));
                     break;
+
                 case 2:
                     cards.Add(new Card(Properties.Resources.broek, 1));
                     cards.Add(new Card(Properties.Resources.trui, 2));
                     cards.Add(new Card(Properties.Resources.hemd, 3));
                     cards.Add(new Card(Properties.Resources.tshirt, 4));
                     break;
+
                 case 3:
                     cards.Add(new Card(Properties.Resources.pet, 1));
                     cards.Add(new Card(Properties.Resources.polo, 2));
                     cards.Add(new Card(Properties.Resources.polo2, 3));
                     cards.Add(new Card(Properties.Resources.tshirt, 4));
                     break;
+
                 case 4:
                     cards.Add(new Card(Properties.Resources.spiegel, 1));
                     cards.Add(new Card(Properties.Resources.lip, 2));
@@ -51,6 +55,7 @@ namespace Proftaak
                     break;
             }
         }
+
         public Image Set_Image()
         {
             int i = rng.Next(0, 4);
@@ -78,8 +83,10 @@ namespace Proftaak
         {
             if (ans == n)
             {
+                score.addScore(true);
                 return true;
             }
+            score.addScore(false);
             return false;
         }
     }
