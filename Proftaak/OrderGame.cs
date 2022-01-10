@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Drawing;
 
 namespace Proftaak
@@ -28,7 +25,7 @@ namespace Proftaak
             }
             counter = 0;
 
-            int n = rng.Next(1,4);
+            int n = rng.Next(1, 4);
 
             switch (n)
             {
@@ -94,7 +91,7 @@ namespace Proftaak
                     complete = false;
                 }
             }
-            
+
             if (complete)
             {
                 bool check = false;

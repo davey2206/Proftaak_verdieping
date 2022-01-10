@@ -173,9 +173,29 @@ namespace Proftaak.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Autoweg_Achtergrond_groen1 {
+            get {
+                object obj = ResourceManager.GetObject("Autoweg_Achtergrond_groen1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Autoweg_Achtergrond_rood {
             get {
                 object obj = ResourceManager.GetObject("Autoweg_Achtergrond_rood", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Autoweg_Achtergrond_rood1 {
+            get {
+                object obj = ResourceManager.GetObject("Autoweg_Achtergrond_rood1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -633,9 +653,29 @@ namespace Proftaak.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pictogram_kaart1 {
+            get {
+                object obj = ResourceManager.GetObject("pictogram_kaart1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pictogram_lichtjes {
             get {
                 object obj = ResourceManager.GetObject("pictogram_lichtjes", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pictogram_lichtjes1 {
+            get {
+                object obj = ResourceManager.GetObject("pictogram_lichtjes1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

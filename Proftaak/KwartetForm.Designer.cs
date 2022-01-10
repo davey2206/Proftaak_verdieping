@@ -37,6 +37,8 @@ namespace Proftaak
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.blue_btn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.green_btn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yellow_btn)).BeginInit();
@@ -131,6 +133,30 @@ namespace Proftaak
             this.pictureBox1.TabIndex = 31;
             this.pictureBox1.TabStop = false;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(679, 109);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(690, 135);
+            this.label2.TabIndex = 40;
+            this.label2.Text = "anti-kwartet";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(740, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(564, 69);
+            this.label3.TabIndex = 39;
+            this.label3.Text = "Wordt nu gespeeld:";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // KwartetForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -138,6 +164,8 @@ namespace Proftaak
             this.BackgroundImage = global::Proftaak.Properties.Resources.Achtergrond;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1920, 1080);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.blue_btn);
             this.Controls.Add(this.green_btn);
             this.Controls.Add(this.yellow_btn);
@@ -161,6 +189,7 @@ namespace Proftaak
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -174,5 +203,7 @@ namespace Proftaak
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }

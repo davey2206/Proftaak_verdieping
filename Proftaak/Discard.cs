@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Drawing;
 
 namespace Proftaak
@@ -42,7 +39,7 @@ namespace Proftaak
         {
             Random rng = new Random();
 
-            int n = rng.Next(1,8);
+            int n = rng.Next(1, 8);
             while (number[n] == 0)
             {
                 n = rng.Next(1, 8);
@@ -67,7 +64,7 @@ namespace Proftaak
             {
                 number[i] = i + 1;
             }
-            int n = rng.Next(1,8);
+            int n = rng.Next(1, 8);
 
             number[n] = 0;
 

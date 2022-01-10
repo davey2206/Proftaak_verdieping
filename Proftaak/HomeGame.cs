@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Drawing;
 
 namespace Proftaak
@@ -13,7 +9,7 @@ namespace Proftaak
         private HomeItem homeItem;
         public Image getImage()
         {
-            int n = rng.Next(1,14);
+            int n = rng.Next(1, 14);
             switch (n)
             {
                 case 1:
@@ -56,7 +52,7 @@ namespace Proftaak
                     homeItem = new HomeItem(3, Properties.Resources.ovenwant);
                     break;
                 case 14:
-                    homeItem = new HomeItem(3,Properties.Resources.deegroller1);
+                    homeItem = new HomeItem(3, Properties.Resources.deegroller1);
                     break;
                 case 15:
                     homeItem = new HomeItem(3, Properties.Resources.appel1);

@@ -1,14 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Text;
 using System.Threading;
-using System.IO.Ports;
+using System.Windows.Forms;
 
 namespace Proftaak
 {
@@ -50,11 +42,11 @@ namespace Proftaak
                     break;
             }
 
-            blanco.Invoke((new MethodInvoker(delegate{blanco.Visible = false;})));
-            blanco1.Invoke((new MethodInvoker(delegate{blanco1.Visible = true;})));
-            blanco2.Invoke((new MethodInvoker(delegate{blanco2.Visible = true;})));
-            blanco3.Invoke((new MethodInvoker(delegate{blanco3.Visible = true;})));
-            blanco4.Invoke((new MethodInvoker(delegate{blanco4.Visible = true;})));
+            blanco.Invoke((new MethodInvoker(delegate { blanco.Visible = false; })));
+            blanco1.Invoke((new MethodInvoker(delegate { blanco1.Visible = true; })));
+            blanco2.Invoke((new MethodInvoker(delegate { blanco2.Visible = true; })));
+            blanco3.Invoke((new MethodInvoker(delegate { blanco3.Visible = true; })));
+            blanco4.Invoke((new MethodInvoker(delegate { blanco4.Visible = true; })));
             white_btn.Invoke((new MethodInvoker(delegate { white_btn.Visible = true; })));
             yellow_btn.Invoke((new MethodInvoker(delegate { yellow_btn.Visible = true; })));
             blue_btn.Invoke((new MethodInvoker(delegate { blue_btn.Visible = true; })));
@@ -71,11 +63,11 @@ namespace Proftaak
                 Thread.Sleep(1000);
                 this.BackgroundImage = Properties.Resources.Achtergrond;
 
-                blanco.Invoke((new MethodInvoker(delegate{blanco.Visible = true;})));
-                blanco1.Invoke((new MethodInvoker(delegate{blanco1.Visible = false;})));
-                blanco2.Invoke((new MethodInvoker(delegate{blanco2.Visible = false;})));
-                blanco3.Invoke((new MethodInvoker(delegate{blanco3.Visible = false;})));
-                blanco4.Invoke((new MethodInvoker(delegate{blanco4.Visible = false;})));
+                blanco.Invoke((new MethodInvoker(delegate { blanco.Visible = true; })));
+                blanco1.Invoke((new MethodInvoker(delegate { blanco1.Visible = false; })));
+                blanco2.Invoke((new MethodInvoker(delegate { blanco2.Visible = false; })));
+                blanco3.Invoke((new MethodInvoker(delegate { blanco3.Visible = false; })));
+                blanco4.Invoke((new MethodInvoker(delegate { blanco4.Visible = false; })));
                 white_btn.Invoke((new MethodInvoker(delegate { white_btn.Visible = false; })));
                 yellow_btn.Invoke((new MethodInvoker(delegate { yellow_btn.Visible = false; })));
                 blue_btn.Invoke((new MethodInvoker(delegate { blue_btn.Visible = false; })));
@@ -91,11 +83,11 @@ namespace Proftaak
                 Thread.Sleep(1000);
                 this.BackgroundImage = Properties.Resources.Achtergrond;
 
-                blanco.Invoke((new MethodInvoker(delegate{blanco.Visible = true;})));
-                blanco1.Invoke((new MethodInvoker(delegate{blanco1.Visible = false;})));
-                blanco2.Invoke((new MethodInvoker(delegate{blanco2.Visible = false;})));
-                blanco3.Invoke((new MethodInvoker(delegate{blanco3.Visible = false;})));
-                blanco4.Invoke((new MethodInvoker(delegate{blanco4.Visible = false;})));
+                blanco.Invoke((new MethodInvoker(delegate { blanco.Visible = true; })));
+                blanco1.Invoke((new MethodInvoker(delegate { blanco1.Visible = false; })));
+                blanco2.Invoke((new MethodInvoker(delegate { blanco2.Visible = false; })));
+                blanco3.Invoke((new MethodInvoker(delegate { blanco3.Visible = false; })));
+                blanco4.Invoke((new MethodInvoker(delegate { blanco4.Visible = false; })));
                 white_btn.Invoke((new MethodInvoker(delegate { white_btn.Visible = false; })));
                 yellow_btn.Invoke((new MethodInvoker(delegate { yellow_btn.Visible = false; })));
                 blue_btn.Invoke((new MethodInvoker(delegate { blue_btn.Visible = false; })));

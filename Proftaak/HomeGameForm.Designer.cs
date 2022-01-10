@@ -33,6 +33,8 @@ namespace Proftaak
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ItemPb = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemPb)).BeginInit();
             this.SuspendLayout();
@@ -70,6 +72,30 @@ namespace Proftaak
             this.label1.TabIndex = 2;
             this.label1.Text = "Waar hoort dit thuis?";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(447, 109);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(1129, 135);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "waar hoort het thuis";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(744, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(564, 69);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Wordt nu gespeeld:";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // HomeGameForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -77,6 +103,8 @@ namespace Proftaak
             this.BackgroundImage = global::Proftaak.Properties.Resources.Achtergrond;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1920, 1080);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ItemPb);
             this.Controls.Add(this.pictureBox1);
@@ -100,5 +128,7 @@ namespace Proftaak
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox ItemPb;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }

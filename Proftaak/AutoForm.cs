@@ -1,23 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Threading;
+using System.Windows.Forms;
 
 namespace Proftaak
 {
     public partial class AutoForm : Form
     {
-        Vehicle vehicle;
-        Road game = new Road();
-        Port serialPortEvent = new Port();
-        int count = 0;
-        bool checking = false;
+        private Vehicle vehicle;
+        private Road game = new Road();
+        private Port serialPortEvent = new Port();
+        private int count = 0;
+        private bool checking = false;
 
         public AutoForm()
         {
@@ -62,12 +57,13 @@ namespace Proftaak
                 }
             }
         }
+
         public void CheckAnswer(int n)
         {
             if (game.check(n))
             {
                 serialPortEvent.WriteBack("G");
-                this.BackgroundImage = Properties.Resources.Autoweg_Achtergrond_groen;
+                this.BackgroundImage = Properties.Resources.Autoweg_Achtergrond_groen1;
                 Thread.Sleep(1000);
                 this.BackgroundImage = Properties.Resources.autoweg_achtergrond;
                 white_box.BackgroundImage = null;
@@ -78,7 +74,7 @@ namespace Proftaak
             else
             {
                 serialPortEvent.WriteBack("F");
-                this.BackgroundImage = Properties.Resources.Autoweg_Achtergrond_rood;
+                this.BackgroundImage = Properties.Resources.Autoweg_Achtergrond_rood1;
                 Thread.Sleep(1000);
                 this.BackgroundImage = Properties.Resources.autoweg_achtergrond;
                 white_box.BackgroundImage = null;
@@ -90,8 +86,8 @@ namespace Proftaak
             vehicle = game.getVehicle();
             vehicle_box.BackgroundImage = vehicle.Picture;
             checking = false;
-            
         }
+
         private void ProcessData(byte[] data)
         {
             string antwoord = Encoding.Default.GetString(data);

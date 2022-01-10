@@ -170,36 +170,6 @@
     <None Include="Resources\zeshoek.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Achtergrond_groen.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Achtergrond.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Achtergrond_rood.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pictogram_autoweg.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pictogram_huis.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pictogram_kaart.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pictogram_lichtjes.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\blauwe_knop.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\gele_knop.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\groene_knop.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\handmixer.png" />
   </ItemGroup>
   <ItemGroup>
@@ -210,36 +180,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\toiletpapier.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\witte_knop.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\autoweg_achtergrond.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\auto.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\brandweerauto.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\bus.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\busje.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\politieauto.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\tractor.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\vrachtwagen.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ziekenwagen.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Autoweg_Achtergrond rood.png" />
@@ -617,10 +557,76 @@
     <None Include="Resources\tshirt.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\pictogram_wit.png" />
+    <None Include="Resources\Achtergrond.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Achtergrond_groen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Achtergrond_rood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blauwe_knop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gele_knop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\groene_knop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pictogram_autoweg.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pictogram_geel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pictogram_huis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pictogram_kaart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pictogram_lichtjes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pictogram_wit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\witte_knop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Autoweg_Achtergrond_groen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Autoweg_Achtergrond_rood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\autoweg_achtergrond.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ziekenwagen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\auto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brandweerauto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\busje.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\politieauto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tractor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vrachtwagen.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

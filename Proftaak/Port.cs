@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.IO.Ports;
 using System.Windows.Forms;
 
 namespace Proftaak
 {
-    class Port
+    internal class Port
     {
         private SerialPort mySerialPort;
 
@@ -18,12 +14,14 @@ namespace Proftaak
         {
             mySerialPort = new SerialPort("COM5");
             mySerialPort.DataReceived += mySerialPort_DataReceived;
-            mySerialPort.Open();
+            //mySerialPort.Open();
         }
+
         public void closePort()
         {
             mySerialPort.Close();
         }
+
         public void WriteBack(string data)
         {
             mySerialPort.WriteLine(data);
@@ -44,7 +42,6 @@ namespace Proftaak
 
                 var copy = DataReceived;
                 if (copy != null) copy(inputData);
-
             }
             catch (SystemException ex)
             {

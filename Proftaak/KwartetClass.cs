@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Drawing;
 
 namespace Proftaak
@@ -29,28 +26,28 @@ namespace Proftaak
             switch (n)
             {
                 case 1:
-                    cards.Add(new Card(Properties.Resources.olifant ,1));
-                    cards.Add(new Card(Properties.Resources.konijn ,2));
-                    cards.Add(new Card(Properties.Resources.kat ,3));
-                    cards.Add(new Card(Properties.Resources.hond ,4));
+                    cards.Add(new Card(Properties.Resources.olifant, 1));
+                    cards.Add(new Card(Properties.Resources.konijn, 2));
+                    cards.Add(new Card(Properties.Resources.kat, 3));
+                    cards.Add(new Card(Properties.Resources.hond, 4));
                     break;
                 case 2:
-                    cards.Add(new Card(Properties.Resources.broek ,1));
-                    cards.Add(new Card(Properties.Resources.trui ,2));
-                    cards.Add(new Card(Properties.Resources.hemd ,3));
-                    cards.Add(new Card(Properties.Resources.tshirt ,4));
+                    cards.Add(new Card(Properties.Resources.broek, 1));
+                    cards.Add(new Card(Properties.Resources.trui, 2));
+                    cards.Add(new Card(Properties.Resources.hemd, 3));
+                    cards.Add(new Card(Properties.Resources.tshirt, 4));
                     break;
                 case 3:
-                    cards.Add(new Card(Properties.Resources.pet ,1));
-                    cards.Add(new Card(Properties.Resources.polo ,2));
-                    cards.Add(new Card(Properties.Resources.polo2 ,3));
-                    cards.Add(new Card(Properties.Resources.tshirt ,4));
+                    cards.Add(new Card(Properties.Resources.pet, 1));
+                    cards.Add(new Card(Properties.Resources.polo, 2));
+                    cards.Add(new Card(Properties.Resources.polo2, 3));
+                    cards.Add(new Card(Properties.Resources.tshirt, 4));
                     break;
                 case 4:
-                    cards.Add(new Card(Properties.Resources.spiegel ,1));
-                    cards.Add(new Card(Properties.Resources.lip ,2));
-                    cards.Add(new Card(Properties.Resources.maskara ,3));
-                    cards.Add(new Card(Properties.Resources.poeder ,4));
+                    cards.Add(new Card(Properties.Resources.spiegel, 1));
+                    cards.Add(new Card(Properties.Resources.lip, 2));
+                    cards.Add(new Card(Properties.Resources.maskara, 3));
+                    cards.Add(new Card(Properties.Resources.poeder, 4));
                     break;
             }
         }

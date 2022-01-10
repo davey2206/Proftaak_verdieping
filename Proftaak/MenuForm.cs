@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text;
 using System.Windows.Forms;
 
 namespace Proftaak
@@ -14,7 +7,7 @@ namespace Proftaak
     {
         Port serialPortEvent = new Port();
         bool select = true;
-        
+
         public MenuForm()
         {
             InitializeComponent();
