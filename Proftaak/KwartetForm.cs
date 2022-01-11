@@ -6,9 +6,10 @@ namespace Proftaak
 {
     public partial class KwartetForm : Form
     {
-        KwartetClass game = new KwartetClass();
-        Port serialPortEvent = new Port();
-        public KwartetForm()
+        private KwartetClass game = new KwartetClass();
+        private Port serialPortEvent = new Port();
+
+        public KwartetForm(int id)
         {
             InitializeComponent();
             serialPortEvent.openPort();

@@ -26,7 +26,7 @@ namespace Proftaak
         public void setScore(int game, int score)
         {
             getConnaction();
-            query = "";
+            query = "INSERT INTO score VALUES (" + user + game + score + ")";
             commandDatabase = new MySqlCommand(query, databaseConnection);
 
             try
@@ -35,9 +35,48 @@ namespace Proftaak
                 MySqlDataReader myReader = commandDatabase.ExecuteReader();
                 databaseConnection.Close();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
             }
+        }
+
+        public int login(string u, string p)
+        {
+            getConnaction();
+            query = "SELECT id, password FROM users WHERE username = " + u;
+            commandDatabase = new MySqlCommand(query, databaseConnection);
+            try
+            {
+                databaseConnection.Open();
+                reader = commandDatabase.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        string[] row = { reader.GetString(0) };
+                        if (BCrypt.Net.BCrypt.Verify(p, row[1]))
+                        {
+                            return int.Parse(row[0]);
+                        }
+                        else
+                        {
+                            return 0;
+                        }
+                    }
+                }
+                else
+                {
+                    return 0;
+                }
+
+                databaseConnection.Close();
+            }
+            catch (Exception)
+            {
+                return 0;
+                throw;
+            }
+            return 0;
         }
     }
 }

@@ -6,7 +6,7 @@ namespace Proftaak
 {
     internal class OrderGame
     {
-        private Score score = new Score(5, 5);
+        private Score score;
         private List<Card> cards = new List<Card>();
         private Random rng = new Random();
         private bool complete = false;
@@ -14,6 +14,11 @@ namespace Proftaak
         private int[] empty = { 1, 2, 3, 4 };
         private int[] order = { 0, 0, 0, 0 };
         private int[] answer = { 0, 0, 0, 0 };
+
+        private void getId(int u)
+        {
+            score = new Score(5, 5, u);
+        }
 
         public void CreateCards()
         {

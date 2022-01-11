@@ -6,7 +6,7 @@ namespace Proftaak
 {
     internal class Road
     {
-        private Score score = new Score(4, 2);
+        private Score score;
         private List<Vehicle> vehicles = new List<Vehicle>();
         private Random rng = new Random();
         private int answer;
@@ -16,6 +16,11 @@ namespace Proftaak
         private int[] rngPosition = { 10, 10, 10, 10, 10 };
         private int[] position = { 0, 0, 0, 0, 0 };
         private int[] answerNumber = { 0, 0, 0, 0, 0 };
+
+        private void getId(int u)
+        {
+            score = new Score(4, 2, u);
+        }
 
         public void Make_vehicles()
         {

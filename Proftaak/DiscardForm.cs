@@ -10,7 +10,7 @@ namespace Proftaak
         private Port serialPortEvent = new Port();
         private bool Start = true;
 
-        public DiscardForm()
+        public DiscardForm(int id)
         {
             InitializeComponent();
             serialPortEvent.openPort();

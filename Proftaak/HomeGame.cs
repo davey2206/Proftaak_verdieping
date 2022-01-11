@@ -5,9 +5,15 @@ namespace Proftaak
 {
     internal class HomeGame
     {
-        private Score score = new Score(10, 1);
+        private Score score;
         private Random rng = new Random();
+
         private HomeItem homeItem;
+
+        private void getId(int u)
+        {
+            score = new Score(10, 1, u);
+        }
 
         public Image getImage()
         {

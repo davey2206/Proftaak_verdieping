@@ -6,14 +6,14 @@ namespace Proftaak
 {
     public partial class OrderForm : Form
     {
+        private OrderGame game = new OrderGame();
+        private Port serialPortEvent = new Port();
+        private bool btn1Check = true;
+        private bool btn2Check = true;
+        private bool btn3Check = true;
+        private bool btn4Check = true;
 
-        OrderGame game = new OrderGame();
-        Port serialPortEvent = new Port();
-        bool btn1Check = true;
-        bool btn2Check = true;
-        bool btn3Check = true;
-        bool btn4Check = true;
-        public OrderForm()
+        public OrderForm(int id)
         {
             InitializeComponent();
             serialPortEvent.openPort();
@@ -57,6 +57,7 @@ namespace Proftaak
                 btn4Check = true;
             }
         }
+
         private void ProcessData(byte[] data)
         {
             string antwoord = Encoding.Default.GetString(data);

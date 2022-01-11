@@ -6,12 +6,18 @@ namespace Proftaak
 {
     internal class KwartetClass
     {
-        private Score score = new Score(10, 6);
+        private Score score;
         private Random rng = new Random();
+
         private List<Card> cards = new List<Card>();
         private int[] empty = { 1, 2, 3, 4 };
         private int counter = 0;
         private int ans;
+
+        private void getId(int u)
+        {
+            score = new Score(10, 6, u);
+        }
 
         public void Get_List()
         {

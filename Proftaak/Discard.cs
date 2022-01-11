@@ -6,13 +6,18 @@ namespace Proftaak
 {
     internal class Discard
     {
-        private Score score = new Score(10, 4);
+        private Score score;
         private int[] number = { 1, 2, 3, 4, 5, 6, 7, 8 };
         private int answer;
 
         private Random rng = new Random();
 
         private List<Card> cards = new List<Card>();
+
+        private void getId(int u)
+        {
+            score = new Score(10, 4, u);
+        }
 
         public void MakeCards()
         {

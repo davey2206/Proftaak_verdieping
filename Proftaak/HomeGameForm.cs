@@ -6,9 +6,10 @@ namespace Proftaak
 {
     public partial class HomeGameForm : Form
     {
-        HomeGame game = new HomeGame();
-        Port serialPortEvent = new Port();
-        public HomeGameForm()
+        private HomeGame game = new HomeGame();
+        private Port serialPortEvent = new Port();
+
+        public HomeGameForm(int id)
         {
             InitializeComponent();
             serialPortEvent.openPort();

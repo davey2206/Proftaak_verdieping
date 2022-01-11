@@ -14,10 +14,11 @@ namespace Proftaak
         private int score = 0;
         private int game;
 
-        public Score(int m, int g)
+        public Score(int m, int g, int u)
         {
             maxround = m;
             game = g;
+            db.User = u;
         }
 
         public void addScore(bool g)
@@ -32,7 +33,6 @@ namespace Proftaak
             }
             else
             {
-                //TUDO add too database
                 db.setScore(game, score);
                 round = 0;
             }

@@ -5,14 +5,16 @@ namespace Proftaak
 {
     public partial class MenuForm : Form
     {
-        Port serialPortEvent = new Port();
-        bool select = true;
+        private Port serialPortEvent = new Port();
+        private bool select = true;
+        private int id;
 
-        public MenuForm()
+        public MenuForm(int u)
         {
             InitializeComponent();
             serialPortEvent.openPort();
             serialPortEvent.DataReceived += ProcessData;
+            id = u;
         }
 
         private void ProcessData(byte[] data)
@@ -49,7 +51,7 @@ namespace Proftaak
                 if (antwoord == "1")
                 {
                     serialPortEvent.closePort();
-                    HomeGameForm homegame = new HomeGameForm();
+                    HomeGameForm homegame = new HomeGameForm(id);
                     homegame.ShowDialog();
                     serialPortEvent.openPort();
                 }
@@ -63,14 +65,14 @@ namespace Proftaak
                 else if (antwoord == "3")
                 {
                     serialPortEvent.closePort();
-                    DiscardForm discard = new DiscardForm();
+                    DiscardForm discard = new DiscardForm(id);
                     discard.ShowDialog();
                     serialPortEvent.openPort();
                 }
                 else if (antwoord == "4")
                 {
                     serialPortEvent.closePort();
-                    AutoForm auto = new AutoForm();
+                    AutoForm auto = new AutoForm(id);
                     auto.ShowDialog();
                     serialPortEvent.openPort();
                 }
@@ -80,7 +82,7 @@ namespace Proftaak
                 if (antwoord == "1")
                 {
                     serialPortEvent.closePort();
-                    OrderForm ordergame = new OrderForm();
+                    OrderForm ordergame = new OrderForm(id);
                     ordergame.ShowDialog();
                     serialPortEvent.openPort();
                 }
@@ -88,7 +90,7 @@ namespace Proftaak
                 if (antwoord == "4")
                 {
                     serialPortEvent.closePort();
-                    KwartetForm kwartet = new KwartetForm();
+                    KwartetForm kwartet = new KwartetForm(id);
                     kwartet.ShowDialog();
                     serialPortEvent.openPort();
                 }

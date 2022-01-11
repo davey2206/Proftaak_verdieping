@@ -14,7 +14,7 @@ namespace Proftaak
         private int count = 0;
         private bool checking = false;
 
-        public AutoForm()
+        public AutoForm(int id)
         {
             InitializeComponent();
             serialPortEvent.openPort();
