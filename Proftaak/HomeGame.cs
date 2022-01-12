@@ -10,7 +10,7 @@ namespace Proftaak
 
         private HomeItem homeItem;
 
-        private void getId(int u)
+        public void getId(int u)
         {
             score = new Score(10, 1, u);
         }

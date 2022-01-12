@@ -17,6 +17,7 @@ namespace Proftaak
             serialPortEvent.DataReceived += ProcessData;
             game.MakeCards();
             blanco.Image = game.roll();
+            game.getId(id);
         }
 
         public void setCards()

@@ -26,7 +26,7 @@ namespace Proftaak
         public void setScore(int game, int score)
         {
             getConnaction();
-            query = "INSERT INTO score VALUES (" + user + game + score + ")";
+            query = "INSERT INTO scores (user_id, game_id, score) VALUES (" + user + "," + game + "," + score + ")";
             commandDatabase = new MySqlCommand(query, databaseConnection);
 
             try
@@ -43,7 +43,7 @@ namespace Proftaak
         public int login(string u, string p)
         {
             getConnaction();
-            query = "SELECT id, password FROM users WHERE username = " + u;
+            query = "SELECT id, password FROM users WHERE username = '" + u + "'";
             commandDatabase = new MySqlCommand(query, databaseConnection);
             try
             {
@@ -53,7 +53,7 @@ namespace Proftaak
                 {
                     while (reader.Read())
                     {
-                        string[] row = { reader.GetString(0) };
+                        string[] row = { reader.GetString(0), reader.GetString(1)};
                         if (BCrypt.Net.BCrypt.Verify(p, row[1]))
                         {
                             return int.Parse(row[0]);

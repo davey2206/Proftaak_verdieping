@@ -14,7 +14,7 @@ namespace Proftaak
         private int counter = 0;
         private int ans;
 
-        private void getId(int u)
+        public void getId(int u)
         {
             score = new Score(10, 6, u);
         }

@@ -14,7 +14,7 @@ namespace Proftaak
 
         private List<Card> cards = new List<Card>();
 
-        private void getId(int u)
+        public void getId(int u)
         {
             score = new Score(10, 4, u);
         }

@@ -15,7 +15,7 @@ namespace Proftaak
         private int[] order = { 0, 0, 0, 0 };
         private int[] answer = { 0, 0, 0, 0 };
 
-        private void getId(int u)
+        public void getId(int u)
         {
             score = new Score(5, 5, u);
         }

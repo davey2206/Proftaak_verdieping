@@ -15,6 +15,7 @@ namespace Proftaak
             serialPortEvent.openPort();
             serialPortEvent.DataReceived += ProcessData;
             ItemPb.Image = game.getImage();
+            game.getId(id);
         }
 
         public void check(int n)

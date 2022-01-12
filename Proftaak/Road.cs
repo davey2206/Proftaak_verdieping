@@ -17,7 +17,7 @@ namespace Proftaak
         private int[] position = { 0, 0, 0, 0, 0 };
         private int[] answerNumber = { 0, 0, 0, 0, 0 };
 
-        private void getId(int u)
+        public void getId(int u)
         {
             score = new Score(4, 2, u);
         }

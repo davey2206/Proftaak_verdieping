@@ -23,6 +23,7 @@ namespace Proftaak
             game.Make_vehicles();
             vehicle = game.getVehicle();
             vehicle_box.BackgroundImage = vehicle.Picture;
+            game.getId(id);
         }
 
         private void timer1_Tick(object sender, EventArgs e)
