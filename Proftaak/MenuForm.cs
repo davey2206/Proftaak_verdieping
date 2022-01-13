@@ -30,6 +30,8 @@ namespace Proftaak
                     pictureBox2.Invoke((new MethodInvoker(delegate { pictureBox2.Visible = false; })));
                     pictureBox3.Invoke((new MethodInvoker(delegate { pictureBox3.Visible = false; })));
                     pictureBox4.Invoke((new MethodInvoker(delegate { pictureBox4.Visible = false; })));
+                    blue_btn.Invoke((new MethodInvoker(delegate { blue_btn.Visible = false; })));
+                    green_btn.Invoke((new MethodInvoker(delegate { green_btn.Visible = false; })));
                     pictureBox5.Invoke((new MethodInvoker(delegate { pictureBox5.Visible = true; })));
                     pictureBox6.Invoke((new MethodInvoker(delegate { pictureBox6.Visible = true; })));
                     select = false;
@@ -40,6 +42,8 @@ namespace Proftaak
                     pictureBox2.Invoke((new MethodInvoker(delegate { pictureBox2.Visible = true; })));
                     pictureBox3.Invoke((new MethodInvoker(delegate { pictureBox3.Visible = true; })));
                     pictureBox4.Invoke((new MethodInvoker(delegate { pictureBox4.Visible = true; })));
+                    blue_btn.Invoke((new MethodInvoker(delegate { blue_btn.Visible = true; })));
+                    green_btn.Invoke((new MethodInvoker(delegate { green_btn.Visible = true; })));
                     pictureBox5.Invoke((new MethodInvoker(delegate { pictureBox5.Visible = false; })));
                     pictureBox6.Invoke((new MethodInvoker(delegate { pictureBox6.Visible = false; })));
                     select = true;
