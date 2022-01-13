@@ -108,19 +108,19 @@ namespace Proftaak
 
             if (position[r - 1] == answerNumber[0])
             {
-                return "welke kwam als 1e";
+                return "Welke kwam als eerste?";
             }
             else if (position[r - 1] == answerNumber[1])
             {
-                return "welke kwam als 2e";
+                return "Welke kwam als tweede?";
             }
             else if (position[r - 1] == answerNumber[2])
             {
-                return "welke kwam als 3e";
+                return "Welke kwam als derde?";
             }
             else if (position[r - 1] == answerNumber[3])
             {
-                return "welke kwam als 4e";
+                return "Welke kwam als vierde?";
             }
 
             return null;

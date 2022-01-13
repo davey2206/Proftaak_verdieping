@@ -34,6 +34,10 @@ namespace Proftaak
                 menu.Show();
                 this.Hide();
             }
+            else
+            {
+                MessageBox.Show("Wachtwoord en gebruikersnaam komen niet overeen.");
+            }
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

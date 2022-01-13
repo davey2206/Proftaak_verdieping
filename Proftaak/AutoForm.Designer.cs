@@ -91,7 +91,7 @@ namespace Proftaak
             this.vehicle_box.BackColor = System.Drawing.Color.Transparent;
             this.vehicle_box.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.vehicle_box.Cursor = System.Windows.Forms.Cursors.Default;
-            this.vehicle_box.Location = new System.Drawing.Point(148, 330);
+            this.vehicle_box.Location = new System.Drawing.Point(146, 365);
             this.vehicle_box.Name = "vehicle_box";
             this.vehicle_box.Size = new System.Drawing.Size(393, 266);
             this.vehicle_box.TabIndex = 26;
@@ -101,9 +101,9 @@ namespace Proftaak
             // 
             this.yellow_box.BackColor = System.Drawing.Color.Transparent;
             this.yellow_box.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.yellow_box.Location = new System.Drawing.Point(1449, 775);
+            this.yellow_box.Location = new System.Drawing.Point(1530, 782);
             this.yellow_box.Name = "yellow_box";
-            this.yellow_box.Size = new System.Drawing.Size(116, 111);
+            this.yellow_box.Size = new System.Drawing.Size(175, 124);
             this.yellow_box.TabIndex = 25;
             this.yellow_box.TabStop = false;
             // 
@@ -111,9 +111,9 @@ namespace Proftaak
             // 
             this.blue_box.BackColor = System.Drawing.Color.Transparent;
             this.blue_box.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.blue_box.Location = new System.Drawing.Point(1214, 614);
+            this.blue_box.Location = new System.Drawing.Point(1238, 782);
             this.blue_box.Name = "blue_box";
-            this.blue_box.Size = new System.Drawing.Size(116, 111);
+            this.blue_box.Size = new System.Drawing.Size(175, 124);
             this.blue_box.TabIndex = 24;
             this.blue_box.TabStop = false;
             // 
@@ -121,9 +121,9 @@ namespace Proftaak
             // 
             this.green_box.BackColor = System.Drawing.Color.Transparent;
             this.green_box.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.green_box.Location = new System.Drawing.Point(601, 614);
+            this.green_box.Location = new System.Drawing.Point(600, 782);
             this.green_box.Name = "green_box";
-            this.green_box.Size = new System.Drawing.Size(116, 111);
+            this.green_box.Size = new System.Drawing.Size(175, 124);
             this.green_box.TabIndex = 23;
             this.green_box.TabStop = false;
             // 
@@ -132,7 +132,7 @@ namespace Proftaak
             this.blue_btn.BackColor = System.Drawing.Color.Transparent;
             this.blue_btn.BackgroundImage = global::Proftaak.Properties.Resources.blauwe_knop;
             this.blue_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.blue_btn.Location = new System.Drawing.Point(1241, 746);
+            this.blue_btn.Location = new System.Drawing.Point(1287, 934);
             this.blue_btn.Name = "blue_btn";
             this.blue_btn.Size = new System.Drawing.Size(70, 70);
             this.blue_btn.TabIndex = 22;
@@ -143,7 +143,7 @@ namespace Proftaak
             this.green_btn.BackColor = System.Drawing.Color.Transparent;
             this.green_btn.BackgroundImage = global::Proftaak.Properties.Resources.groene_knop;
             this.green_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.green_btn.Location = new System.Drawing.Point(635, 746);
+            this.green_btn.Location = new System.Drawing.Point(652, 934);
             this.green_btn.Name = "green_btn";
             this.green_btn.Size = new System.Drawing.Size(70, 70);
             this.green_btn.TabIndex = 21;
@@ -154,7 +154,7 @@ namespace Proftaak
             this.yellow_btn.BackColor = System.Drawing.Color.Transparent;
             this.yellow_btn.BackgroundImage = global::Proftaak.Properties.Resources.gele_knop;
             this.yellow_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.yellow_btn.Location = new System.Drawing.Point(1474, 905);
+            this.yellow_btn.Location = new System.Drawing.Point(1578, 934);
             this.yellow_btn.Name = "yellow_btn";
             this.yellow_btn.Size = new System.Drawing.Size(70, 70);
             this.yellow_btn.TabIndex = 20;
@@ -164,9 +164,9 @@ namespace Proftaak
             // 
             this.white_box.BackColor = System.Drawing.Color.Transparent;
             this.white_box.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.white_box.Location = new System.Drawing.Point(389, 775);
+            this.white_box.Location = new System.Drawing.Point(316, 782);
             this.white_box.Name = "white_box";
-            this.white_box.Size = new System.Drawing.Size(116, 111);
+            this.white_box.Size = new System.Drawing.Size(175, 124);
             this.white_box.TabIndex = 19;
             this.white_box.TabStop = false;
             // 
@@ -175,7 +175,7 @@ namespace Proftaak
             this.white_btn.BackColor = System.Drawing.Color.Transparent;
             this.white_btn.BackgroundImage = global::Proftaak.Properties.Resources.witte_knop;
             this.white_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.white_btn.Location = new System.Drawing.Point(410, 905);
+            this.white_btn.Location = new System.Drawing.Point(363, 934);
             this.white_btn.Name = "white_btn";
             this.white_btn.Size = new System.Drawing.Size(70, 70);
             this.white_btn.TabIndex = 18;
@@ -191,10 +191,10 @@ namespace Proftaak
             // 
             this.answerLb.AutoSize = true;
             this.answerLb.BackColor = System.Drawing.Color.Transparent;
-            this.answerLb.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.answerLb.Location = new System.Drawing.Point(801, 28);
+            this.answerLb.Font = new System.Drawing.Font("Javanese Text", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.answerLb.Location = new System.Drawing.Point(640, 28);
             this.answerLb.Name = "answerLb";
-            this.answerLb.Size = new System.Drawing.Size(0, 69);
+            this.answerLb.Size = new System.Drawing.Size(0, 136);
             this.answerLb.TabIndex = 30;
             // 
             // AutoForm

@@ -56,10 +56,10 @@ namespace Proftaak
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Javanese Text", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(732, 31);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(564, 69);
+            this.label3.Size = new System.Drawing.Size(569, 136);
             this.label3.TabIndex = 7;
             this.label3.Text = "Wordt nu gespeeld:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -68,12 +68,13 @@ namespace Proftaak
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(642, 131);
+            this.label2.Font = new System.Drawing.Font("Javanese Text", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(67)))), ((int)(((byte)(111)))));
+            this.label2.Location = new System.Drawing.Point(631, 122);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(728, 135);
+            this.label2.Size = new System.Drawing.Size(789, 272);
             this.label2.TabIndex = 8;
-            this.label2.Text = "van de kaart";
+            this.label2.Text = "Van de Kaart";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // blanco1
@@ -141,7 +142,7 @@ namespace Proftaak
             this.blue_btn.BackColor = System.Drawing.Color.Transparent;
             this.blue_btn.BackgroundImage = global::Proftaak.Properties.Resources.blauwe_knop;
             this.blue_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.blue_btn.Location = new System.Drawing.Point(1216, 736);
+            this.blue_btn.Location = new System.Drawing.Point(1195, 736);
             this.blue_btn.Name = "blue_btn";
             this.blue_btn.Size = new System.Drawing.Size(70, 70);
             this.blue_btn.TabIndex = 26;
@@ -153,7 +154,7 @@ namespace Proftaak
             this.green_btn.BackColor = System.Drawing.Color.Transparent;
             this.green_btn.BackgroundImage = global::Proftaak.Properties.Resources.groene_knop;
             this.green_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.green_btn.Location = new System.Drawing.Point(776, 736);
+            this.green_btn.Location = new System.Drawing.Point(788, 736);
             this.green_btn.Name = "green_btn";
             this.green_btn.Size = new System.Drawing.Size(70, 70);
             this.green_btn.TabIndex = 25;
@@ -165,7 +166,7 @@ namespace Proftaak
             this.yellow_btn.BackColor = System.Drawing.Color.Transparent;
             this.yellow_btn.BackgroundImage = global::Proftaak.Properties.Resources.gele_knop;
             this.yellow_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.yellow_btn.Location = new System.Drawing.Point(1613, 736);
+            this.yellow_btn.Location = new System.Drawing.Point(1601, 736);
             this.yellow_btn.Name = "yellow_btn";
             this.yellow_btn.Size = new System.Drawing.Size(70, 70);
             this.yellow_btn.TabIndex = 24;

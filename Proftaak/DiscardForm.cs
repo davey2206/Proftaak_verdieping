@@ -123,6 +123,7 @@ namespace Proftaak
             {
                 if (antwoord == "E")
                 {
+                    serialPortEvent.closePort();
                     this.Invoke(new MethodInvoker(this.Hide));
                 }
                 for (int i = 0; i < 5; i++)
@@ -135,5 +136,6 @@ namespace Proftaak
                 }
             }
         }
+
     }
 }

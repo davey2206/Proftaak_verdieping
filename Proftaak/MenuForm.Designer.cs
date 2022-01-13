@@ -29,6 +29,7 @@ namespace Proftaak
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuForm));
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -56,21 +57,21 @@ namespace Proftaak
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(632, 34);
+            this.label2.Font = new System.Drawing.Font("Javanese Text", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(630, 13);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(742, 135);
+            this.label2.Size = new System.Drawing.Size(804, 272);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Kies uw spel";
+            this.label2.Text = "Kies uw spel:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::Proftaak.Properties.Resources.pictogram_kaart1;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(1050, 500);
+            this.pictureBox1.Location = new System.Drawing.Point(513, 500);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(600, 300);
+            this.pictureBox1.Size = new System.Drawing.Size(500, 250);
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
@@ -78,9 +79,11 @@ namespace Proftaak
             // 
             this.pictureBox2.BackgroundImage = global::Proftaak.Properties.Resources.pictogram_autoweg;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(1050, 200);
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(1034, 230);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(600, 300);
+            this.pictureBox2.Size = new System.Drawing.Size(500, 250);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
             // 
@@ -88,9 +91,9 @@ namespace Proftaak
             // 
             this.pictureBox3.BackgroundImage = global::Proftaak.Properties.Resources.pictogram_lichtjes1;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(450, 500);
+            this.pictureBox3.Location = new System.Drawing.Point(1034, 500);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(600, 300);
+            this.pictureBox3.Size = new System.Drawing.Size(500, 250);
             this.pictureBox3.TabIndex = 7;
             this.pictureBox3.TabStop = false;
             // 
@@ -98,9 +101,11 @@ namespace Proftaak
             // 
             this.pictureBox4.BackgroundImage = global::Proftaak.Properties.Resources.pictogram_huis;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(450, 200);
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(513, 230);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(600, 300);
+            this.pictureBox4.Size = new System.Drawing.Size(500, 250);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 8;
             this.pictureBox4.TabStop = false;
             // 
@@ -108,9 +113,9 @@ namespace Proftaak
             // 
             this.pictureBox5.BackgroundImage = global::Proftaak.Properties.Resources.pictogram_wit;
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Location = new System.Drawing.Point(450, 200);
+            this.pictureBox5.Location = new System.Drawing.Point(513, 230);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(600, 300);
+            this.pictureBox5.Size = new System.Drawing.Size(500, 250);
             this.pictureBox5.TabIndex = 9;
             this.pictureBox5.TabStop = false;
             this.pictureBox5.Visible = false;
@@ -119,9 +124,9 @@ namespace Proftaak
             // 
             this.pictureBox6.BackgroundImage = global::Proftaak.Properties.Resources.pictogram_geel;
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6.Location = new System.Drawing.Point(1050, 200);
+            this.pictureBox6.Location = new System.Drawing.Point(1034, 230);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(600, 300);
+            this.pictureBox6.Size = new System.Drawing.Size(500, 250);
             this.pictureBox6.TabIndex = 10;
             this.pictureBox6.TabStop = false;
             this.pictureBox6.Visible = false;
@@ -131,7 +136,7 @@ namespace Proftaak
             this.blue_btn.BackColor = System.Drawing.Color.Transparent;
             this.blue_btn.BackgroundImage = global::Proftaak.Properties.Resources.blauwe_knop;
             this.blue_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.blue_btn.Location = new System.Drawing.Point(1656, 609);
+            this.blue_btn.Location = new System.Drawing.Point(426, 593);
             this.blue_btn.Name = "blue_btn";
             this.blue_btn.Size = new System.Drawing.Size(70, 70);
             this.blue_btn.TabIndex = 30;
@@ -142,7 +147,7 @@ namespace Proftaak
             this.green_btn.BackColor = System.Drawing.Color.Transparent;
             this.green_btn.BackgroundImage = global::Proftaak.Properties.Resources.groene_knop;
             this.green_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.green_btn.Location = new System.Drawing.Point(374, 609);
+            this.green_btn.Location = new System.Drawing.Point(1550, 593);
             this.green_btn.Name = "green_btn";
             this.green_btn.Size = new System.Drawing.Size(70, 70);
             this.green_btn.TabIndex = 29;
@@ -153,7 +158,7 @@ namespace Proftaak
             this.yellow_btn.BackColor = System.Drawing.Color.Transparent;
             this.yellow_btn.BackgroundImage = global::Proftaak.Properties.Resources.gele_knop;
             this.yellow_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.yellow_btn.Location = new System.Drawing.Point(1656, 316);
+            this.yellow_btn.Location = new System.Drawing.Point(1550, 316);
             this.yellow_btn.Name = "yellow_btn";
             this.yellow_btn.Size = new System.Drawing.Size(70, 70);
             this.yellow_btn.TabIndex = 28;
@@ -164,7 +169,7 @@ namespace Proftaak
             this.white_btn.BackColor = System.Drawing.Color.Transparent;
             this.white_btn.BackgroundImage = global::Proftaak.Properties.Resources.witte_knop;
             this.white_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.white_btn.Location = new System.Drawing.Point(374, 316);
+            this.white_btn.Location = new System.Drawing.Point(426, 316);
             this.white_btn.Name = "white_btn";
             this.white_btn.Size = new System.Drawing.Size(70, 70);
             this.white_btn.TabIndex = 27;
@@ -181,12 +186,12 @@ namespace Proftaak
             this.Controls.Add(this.green_btn);
             this.Controls.Add(this.yellow_btn);
             this.Controls.Add(this.white_btn);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.label2);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

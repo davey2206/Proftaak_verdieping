@@ -76,7 +76,7 @@ namespace Proftaak
             this.yellow_btn.BackColor = System.Drawing.Color.Transparent;
             this.yellow_btn.BackgroundImage = global::Proftaak.Properties.Resources.gele_knop;
             this.yellow_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.yellow_btn.Location = new System.Drawing.Point(1585, 683);
+            this.yellow_btn.Location = new System.Drawing.Point(1568, 683);
             this.yellow_btn.Name = "yellow_btn";
             this.yellow_btn.Size = new System.Drawing.Size(70, 70);
             this.yellow_btn.TabIndex = 36;
@@ -87,7 +87,7 @@ namespace Proftaak
             this.white_btn.BackColor = System.Drawing.Color.Transparent;
             this.white_btn.BackgroundImage = global::Proftaak.Properties.Resources.witte_knop;
             this.white_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.white_btn.Location = new System.Drawing.Point(386, 683);
+            this.white_btn.Location = new System.Drawing.Point(360, 683);
             this.white_btn.Name = "white_btn";
             this.white_btn.Size = new System.Drawing.Size(70, 70);
             this.white_btn.TabIndex = 35;
@@ -137,22 +137,23 @@ namespace Proftaak
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(679, 109);
+            this.label2.Font = new System.Drawing.Font("Javanese Text", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(67)))), ((int)(((byte)(111)))));
+            this.label2.Location = new System.Drawing.Point(617, 78);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(690, 135);
+            this.label2.Size = new System.Drawing.Size(804, 272);
             this.label2.TabIndex = 40;
-            this.label2.Text = "anti-kwartet";
+            this.label2.Text = "Anti-Kwartet";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Javanese Text", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(740, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(564, 69);
+            this.label3.Size = new System.Drawing.Size(569, 136);
             this.label3.TabIndex = 39;
             this.label3.Text = "Wordt nu gespeeld:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -164,7 +165,6 @@ namespace Proftaak
             this.BackgroundImage = global::Proftaak.Properties.Resources.Achtergrond;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1920, 1080);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.blue_btn);
             this.Controls.Add(this.green_btn);
@@ -174,6 +174,7 @@ namespace Proftaak
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.label2);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "KwartetForm";
